@@ -5,4 +5,4 @@ let font = () => {
     text.style.fontSize = `${input.value}px`
 }
 
-input.addEventListener("click", font);
+input.addEventListener("input", font);

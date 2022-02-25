@@ -3,6 +3,9 @@ const output = document.querySelector('#name-output');
 
 const text = event => {
     output.textContent = event.currentTarget.value;
+    if (!event.currentTarget.value) {
+        output.textContent = "Anonymous";
+    }
 }
 
 textInput.addEventListener("input", text);
